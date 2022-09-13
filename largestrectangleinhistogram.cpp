@@ -6,6 +6,8 @@
     function  int b=next[i]-prev[i]-1; and before calculating this check next[i]!=-1 if yes then do next[i]=n;
 
     Note 2:  In nextsmaller and prevsmaller function always remember store the index not value 
+    T.c-> O(n)
+    S.C-> O(n)
  */
  vector<int>nextsmaller(vector<int>&arr,int n){
         stack<int>s;
