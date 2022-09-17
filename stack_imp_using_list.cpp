@@ -5,7 +5,7 @@ class Node
 public:
     int data;
     Node *next;
-    Node(int x)
+    Node(int x)// It will create a new node and data of node =x and node->next=NULL;
     {
         data = x;
         next = NULL;
@@ -14,7 +14,7 @@ public:
 class MyStack
 {
 private:
-    Node *top;
+    Node *top;// top pointer counts the number of element in stack
 
 public:
     MyStack()
@@ -23,8 +23,8 @@ public:
     }
     void push(int x)
     {
-        Node *temp = new Node(x);
-        temp->next = top;
+        Node *temp = new Node(x);// create a new node 
+        temp->next = top;// here top means the value in top pointer (NULL)
         top = temp;
     }
     void peek()
